@@ -1,0 +1,130 @@
+.posts
+  width: 1120px
+
+  &__title
+    margin-bottom: 20px
+
+.post
+  margin-bottom: 10px
+
+  &__header
+    padding: 20px 0 20px 40px
+    display: flex
+    background-color: rgb(243, 246, 252)
+    height: 76px
+    border-top-right-radius: 20px
+    border-top-left-radius: 20px
+    box-sizing: border-box
+    align-items: center
+
+  &__content
+    padding: 25px 40px 20px
+
+    &-text
+      font-size: 14px
+      font-family: "Montserrat Semibold", sans-serif
+      color: rgb(92, 113, 130)
+      margin-bottom: 20px
+
+    &-link
+
+      &:before
+        content: "[ "
+        font-size: 14px
+        font-family: "Montserrat", sans-serif
+        color: rgb(20, 34, 45)
+        font-weight: bold
+
+      &:after
+        content: " ]"
+        font-size: 14px
+        font-family: "Montserrat", sans-serif
+        color: rgb(20, 34, 45)
+        font-weight: bold
+
+  &__name
+    font-size: 14px
+    color: rgb(63, 90, 169)
+    font-family: "Montserrat Semibold", sans-serif
+    font-style: normal
+
+
+  &__number
+    font-size: 14px
+    font-family: "Montserrat", sans-serif
+    color: rgb(20, 34, 45)
+    font-weight: bold
+    margin-right: 35px
+
+
+  &__related
+    &-news
+      display: flex
+      margin-bottom: 8px
+
+    &-link
+      font-size: 11px
+      font-family: "Montserrat", sans-serif
+      color: rgb(126, 133, 158)
+      font-style: normal
+      border-color: rgb(126, 133, 158)
+
+      &_2
+        margin-left: 20px
+
+        &:before
+          content: ""
+          display: inline-block
+          border-radius: 50%
+          width: 4px
+          height: 4px
+          background-color: rgb(126, 133, 158)
+          margin-right: 10px
+
+  &__footer
+    padding: 20px 40px
+    display: flex
+    justify-content: space-between
+
+  &__date
+    font-size: 11px
+    font-family: "Montserrat", sans-serif
+    color: rgb(126, 133, 158)
+
+  &__action
+    font-size: 12px
+    font-family: "Montserrat", sans-serif
+    color: rgb(63, 90, 169)
+    font-weight: bold
+    font-style: italic
+    border: none
+    background-color: #fff
+    border-bottom: 1px solid #C3C7DB
+    position: relative
+    outline: none
+
+    &:not(:last-child)
+      margin-right: 50px
+
+    &:before
+      position: absolute
+      display: inline-block
+      left: -20px
+      bottom: 0
+
+
+    &_remove
+      &:before
+        content: url("../../../../assets/images/desktop/posts/removeIcon.png")
+
+    &_reply
+      &:before
+        content: url("../../../../assets/images/desktop/posts/replyIcon.png")
+
+    &_quote
+      &:before
+        content: url("../../../../assets/images/desktop/posts/quoteIcon.png")
+
+    &_notify
+      &:before
+        content: url("../../../../assets/images/desktop/posts/notifyIcon.png")
